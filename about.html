@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Marho Boss Learn Coding</title>
+    <link rel="shortcut icon" type="x-icon" href="max.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: #222;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        .logo img {
+            width:70px;
+        }
+
+        .content {
+            margin-top: 80px; /* Adjust for the fixed header */
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .content h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .image-gallery img {
+            max-width: 45%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .footer-link {
+            color: #ff8c00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .footer-link:hover {
+            color: #e07a00;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="logo">
+            <img src="max.png" width="45px" alt="Marho Boss Logo">
+        </div>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content">
+        <h1>About Marho Boss Learn Coding</h1>
+        <p>
+            Marho Boss Learn Coding is a place to develop and learn. Whether you're a beginner or an advanced coder, 
+            we provide resources and a community to help you grow. Join us as we explore the exciting world of coding together.
+        </p>
+
+        <div class="image-gallery">
+            <img src="code.jpg" >
+            <img src="money.jpg">
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Marho Boss. All rights reserved.</p>
+     <a href="http://Aj9ES8PQUhwLwxe:QHBZcO363daIw0s@localhost:42452/storage/emulated/0/coding/web%20dev./My%20code/terms%20and%20conditions%20.html" class="footer-link">Terms & Conditions</a>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn HTML</title>
+</head>
+<body>
+  <div class="header">
+        <div class="logo">
+            <img src="max.png" width="45px">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="http://Aj9ES8PQUhwLwxe:QHBZcO363daIw0s@localhost:42452/storage/emulated/0/coding/web%20dev./My%20code/Home.html">Home</a></li>
+                <li><a href="http://Aj9ES8PQUhwLwxe:QHBZcO363daIw0s@localhost:42452/storage/emulated/0/coding/web%20dev./My%20code/about.html">About</a></li>
+                <li><a href="http://Aj9ES8PQUhwLwxe:QHBZcO363daIw0s@localhost:42452/storage/emulated/0/coding/web%20dev./My%20code/contact.html">Contact </a></li>
+                <li><a href="http://Aj9ES8PQUhwLwxe:QHBZcO363daIw0s@localhost:42452/storage/emulated/0/coding/web%20dev./My%20code/support%20.html">Support</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>HTML (HyperText Markup Language) is the standard language for creating webpages. It structures your content and elements like text, images, and links.
+           It forms the backbone of all websites on the internet before the application of CSS.
+
+        </p>
+    </section>
+      <section id="introduction 2">
+        <h2>Introduction to  Text Editors, and Web Browsers</h2>
+
+        
+        <h3>Text Editors: Writing HTML Code</h3>
+        <p>To create HTML files, you need a text editor—a software application that allows you to write and edit text. Popular text editors include:</p>
+        <ul>
+            <li><strong>Notepad (Windows)</strong>: A basic text editor that comes pre-installed with Windows.</li>
+            <li><strong>TextEdit (Mac)</strong>: A simple text editor available on macOS.</li>
+            <li><strong>VS Code</strong>: A popular, free code editor that provides advanced features for coding in HTML and other languages.</li>
+            <li><strong>Sublime Text</strong>: A lightweight text editor that supports a wide range of programming languages.</li>
+            <li><strong>Atom</strong>: An open-source text editor with customizable features.</li>
+        </ul>
+        <p>Simply open any of these text editors and start writing your HTML code. Once you're done, you can save the file with a <code>.html</code> extension (e.g., <code>index.html</code>).</p>
+
+        <h3>Web Browsers: Viewing HTML Files</h3>
+        <p>Web browsers are software applications used to view and interact with HTML files. Browsers interpret the HTML code and render it as a visual webpage. Popular web browsers include:</p>
+        <ul>
+            <li><strong>Google Chrome</strong>: A fast and widely-used browser known for its developer tools.</li>
+            <li><strong>Mozilla Firefox</strong>: A browser focused on privacy and open-source development.</li>
+            <li><strong>Microsoft Edge</strong>: A browser developed by Microsoft, based on Chromium.</li>
+            <li><strong>Safari</strong>: The default web browser for Apple devices, known for its speed and efficiency.</li>
+        </ul>
+        <p>To view an HTML file, simply open it in any of these web browsers. The browser will process the HTML code and display it as a formatted webpage.</p>
+
+        <h3>How HTML Works</h3>
+        <p>HTML works by using a series of elements, which are defined by tags. These tags are enclosed in angle brackets <code>&lt;&gt;</code> and come in pairs: an opening tag <code>&lt;tag&gt;</code> and a closing tag <code>&lt;/tag&gt;</code>. The content placed between these tags is affected by the tags' properties.</p>
+        <p>Here’s a basic example of HTML code:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;My First Webpage&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Welcome to My Webpage&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph of text on my webpage.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        <p>The above code includes the following elements:</p>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt;</code>: Declares the document type and version of HTML being used.</li>
+            <li><code>&lt;html&gt;</code>: The root element that wraps all the content on the page.</li>
+            <li><code>&lt;head&gt;</code>: Contains meta-information about the document, such as its title.</li>
+            <li><code>&lt;title&gt;</code>: Sets the title of the webpage, which appears in the browser tab.</li>
+            <li><code>&lt;body&gt;</code>: Contains the content that will be visible on the webpage, including headings and paragraphs.</li>
+            <li><code>&lt;h1&gt;</code>: Represents a top-level heading.</li>
+            <li><code>&lt;p&gt;</code>: Defines a paragraph of text.</li>
+        </ul>
+        <p>When this code is opened in a web browser, it will display a webpage with a title and a heading followed by a paragraph of text.</p>
+    </section>
+
+    <section id="basics">
+        <h2>HTML Basics</h2>
+        <p>Here are the basic elements of an HTML document:</p>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Page Title&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;This is a Heading&lt;/h1&gt;
+        &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
+  
+    <section id="tags">
+        <h2>Understanding HTML Tags</h2>
+        <p>In HTML, tags are used to define the structure and content of your web page. An HTML tag is usually enclosed in angle brackets, <code>&lt;&gt;</code>, and comes in pairs: an opening tag <code>&lt;tagname&gt;</code> and a closing tag <code>&lt;/tagname&gt;</code>.</p>
+        <p>The content between the opening and closing tags is affected by the tag's properties. For example, consider the following HTML snippet:</p>
+        <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></pre>
+        <p>Here, <code>&lt;p&gt;</code> is the opening tag for a paragraph, and <code>&lt;/p&gt;</code> is the closing tag. The content "This is a paragraph." is enclosed within these tags and will be displayed as a paragraph on the webpage.</p>
+        <p>Tags often have attributes that provide additional information or modify the behavior of an element. For instance:</p>
+        <pre><code>&lt;a href="https://www.example.com"&gt;Click here&lt;/a&gt;</code></pre>
+        <p>In this example, the <code>&lt;a&gt;</code> tag is used to create a hyperlink, with the <code>href</code> attribute specifying the URL.</p>
+    </section>
+
+    <section id="elements">
+        <h2>Common HTML Elements</h2>
+        <ul>
+            <li>&lt;h1&gt; to &lt;h6&gt;: Headings</li>
+            <li>&lt;p&gt;: Paragraph</li>
+            <li>&lt;a&gt;: Link</li>
+            <li>&lt;img&gt;: Image</li>
+            <li>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;: Lists</li>
+        </ul>
+    </section>
+      <section id="html-elements">
+        <h2>Understanding Common HTML Elements</h2>
+        
+        <h3>Headings: &lt;h1&gt; to &lt;h6&gt;</h3>
+        <p>HTML provides six levels of headings, from <code>&lt;h1&gt;</code> (the most important) to <code>&lt;h6&gt;</code> (the least important). Headings are typically used for titles and subtitles.</p>
+        <pre><code>&lt;h1&gt;This is a level 1 heading&lt;/h1&gt;
+&lt;h2&gt;This is a level 2 heading&lt;/h2&gt;
+&lt;h3&gt;This is a level 3 heading&lt;/h3&gt;
+&lt;h4&gt;This is a level 4 heading&lt;/h4&gt;
+&lt;h5&gt;This is a level 5 heading&lt;/h5&gt;
+&lt;h6&gt;This is a level 6 heading&lt;/h6&gt;
+</code></pre>
+
+        <h3>Centering Text: &lt;center&gt;</h3>
+        <p>The <code>&lt;center&gt;</code> tag is used to center-align text and other content. However, it is important to note that this tag is deprecated in HTML5. Instead, use CSS for centering content.</p>
+        <pre><code>&lt;center&gt;This text is centered&lt;/center&gt;</code></pre>
+
+        <h3>Underlining Text: &lt;u&gt;</h3>
+        <p>The <code>&lt;u&gt;</code> tag is used to underline text.</p>
+        <pre><code>&lt;u&gt;This text is underlined&lt;/u&gt;</code></pre>
+
+        <h3>Italicizing Text: &lt;i&gt;</h3>
+        <p>The <code>&lt;i&gt;</code> tag is used to italicize text.</p>
+        <pre><code>&lt;i&gt;This text is italicized&lt;/i&gt;</code></pre>
+
+        <h3>Preformatted Text: &lt;pre&gt;</h3>
+        <p>The <code>&lt;pre&gt;</code> tag is used to display preformatted text. This means that whitespace and line breaks are preserved as they are in the HTML code.</p>
+        <pre><code>&lt;pre&gt;
+This is preformatted text.
+    Line breaks and spaces
+    are preserved in this block.
+&lt;/pre&gt;</code></pre>
+
+        <h3>Paragraphs: &lt;p&gt;</h3>
+        <p>The <code>&lt;p&gt;</code> tag defines a paragraph of text. Paragraphs are block-level elements and are typically used to group sentences together.</p>
+        <pre><code>&lt;p&gt;This is a paragraph of text.&lt;/p&gt;</code></pre>
+    </section>
+    <section id="lists">
+        <h2>Understanding HTML Lists: &lt;ul&gt; and &lt;ol&gt;</h2>
+
+        <h3>Unordered Lists: &lt;ul&gt;</h3>
+        <p>An unordered list is a collection of items that do not have a specific order. Each item in the list is usually marked with a bullet point.</p>
+        <p>Here is an example of a basic unordered list:</p>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+    &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <p>The above code will render as:</p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <h3>Ordered Lists: &lt;ol&gt;</h3>
+        <p>An ordered list is a collection of items that have a specific sequence. Each item is numbered by default.</p>
+        <p>Here is an example of a basic ordered list:</p>
+        <pre><code>&lt;ol&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        <p>The above code will render as:</p>
+        <ol>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+
+        <h3>Ordered Lists with Custom Types</h3>
+        <p>You can customize the numbering style of an ordered list using the <code>type</code> attribute. For example:</p>
+
+        <p><strong>Alphabetical list:</strong> Using <code>type="a"</code> will create a list with lowercase alphabetical characters.</p>
+        <pre><code>&lt;ol type="a"&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        <p>The above code will render as:</p>
+        <ol type="a">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+
+        <p><strong>Roman numeral list:</strong> Using <code>type="i"</code> will create a list with lowercase Roman numerals.</p>
+        <pre><code>&lt;ol type="i"&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        <p>The above code will render as:</p>
+        <ol type="i">
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ol>
+
+        <h3>Unordered Lists with Custom Bullet Types</h3>
+        <p>While you cannot directly change the bullet style using the <code>type</code> attribute with <code>&lt;ul&gt;</code>, you can control the appearance using CSS. However, for demonstration, let's consider the default bullet style:</p>
+        <p><strong>Default bullet list:</strong></p>
+        <pre><code>&lt;ul&gt;
+    &lt;li&gt;First item&lt;/li&gt;
+    &lt;li&gt;Second item&lt;/li&gt;
+    &lt;li&gt;Third item&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        <p>The above code will render as:</p>
+        <ul>
+            <li>First item</li>
+            <li>Second item</li>
+            <li>Third item</li>
+        </ul>
+
+    </section>
+    <section id="tables">
+        <h2>Understanding HTML Tables: &lt;table&gt;, &lt;tr&gt;, and &lt;td&gt;</h2>
+
+        <h3>What is a Table in HTML?</h3>
+        <p>An HTML table is used to organize data into rows and columns. It is a powerful tool for displaying tabular data in a structured format.</p>
+
+        <h3>Table Rows: &lt;tr&gt;</h3>
+        <p>The <code>&lt;tr&gt;</code> tag defines a row in an HTML table. A table is composed of one or more rows, each represented by a <code>&lt;tr&gt;</code> tag.</p>
+        <p>For example, this code defines a table with two rows:</p>
+        <pre><code>&lt;table&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 1, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 2, Cell 1&lt;/td&gt;
+        &lt;td&gt;Row 2, Cell 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+
+        <h3>Table Data: &lt;td&gt;</h3>
+        <p>The <code>&lt;td&gt;</code> tag defines a cell within a table row. Cells are the individual boxes that contain data within a table.</p>
+        <p>For example, within a row, each <code>&lt;td&gt;</code> tag represents a separate cell:</p>
+        <pre><code>&lt;tr&gt;
+    &lt;td&gt;This is a cell&lt;/td&gt;
+    &lt;td&gt;This is another cell&lt;/td&gt;
+&lt;/tr&gt;</code></pre>
+
+        <h3>Putting It All Together: Creating a Simple Table</h3>
+        <p>Here’s an example of how you can create a simple HTML table using the <code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, and <code>&lt;td&gt;</code> tags:</p>
+        <pre><code>&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Name&lt;/td&gt;
+        &lt;td&gt;Age&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Bob&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        <p>The above code will render as:</p>
+        <table border="1">
+            <tr>
+                <td>Name</td>
+                <td>Age</td>
+            </tr>
+            <tr>
+                <td>Alice</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Bob</td>
+                <td>25</td>
+            </tr>
+        </table>
+
+        <h3>Summary</h3>
+        <p>In summary, the <code>&lt;tr&gt;</code> tag defines a row in the table, and the <code>&lt;td&gt;</code> tag defines each cell within that row. Together, these elements allow you to create structured tables in HTML.</p>
+    </section>
+     <section id="media">
+        <h2>Adding Images, Videos, and Audio in HTML</h2>
+
+        <h3>Working with Images: &lt;img&gt; Tag</h3>
+        <p>The <code>&lt;img&gt;</code> tag is used to embed images in an HTML document. This tag is self-closing, meaning it doesn’t require a closing tag.</p>
+        <p>The basic syntax for adding an image looks like this:</p>
+        <pre><code>&lt;img src="image.jpg" alt="Description of the image"&gt;</code></pre>
+        <p>Here’s an example of how to add an image:</p>
+        <pre><code>&lt;img src="logo.jpg" alt="Marhoboss logo"&gt;</code></pre>
+        <p>Output:</p>
+        <img src="max.png"width= "100px">
+
+        <h3>Working with Videos: &lt;video&gt; Tag</h3>
+        <p>The <code>&lt;video&gt;</code> tag is used to embed video content. It requires the <code>src</code> attribute to specify the video file, and the <code>controls</code> attribute to provide play, pause, and volume controls for the user.</p>
+        <p>The basic syntax for adding a video looks like this:</p>
+        <pre><code>&lt;video src="video.mp4" controls&gt;
+    
+&lt;/video&gt;</code></pre>
+        <p>Here’s an example of how to add a video:</p>
+        <pre><code>&lt;video src="sample-video.mp4" controls&gt;
+   
+&lt;/video&gt;</code></pre>
+        <p>Output:</p>
+        <video src="max.mp4" width="190px" controls>
+            Your browser does not support the video tag.
+        </video>
+
+        <h3>Working with Audio: &lt;audio&gt; Tag</h3>
+        <p>The <code>&lt;audio&gt;</code> tag is used to embed audio content. Similar to the <code>&lt;video&gt;</code> tag, it uses the <code>src</code> attribute to specify the audio file and the <code>controls</code> attribute for playback controls.</p>
+        <p>The basic syntax for adding audio looks like this:</p>
+        <pre><code>&lt;audio src="audio.mp3" controls&gt;
+    
+&lt;/audio&gt;</code></pre>
+        <p>Here’s an example of how to add an audio file:</p>
+        <pre><code>&lt;audio src="sample-audio.mp3" controls&gt;
+    
+&lt;/audio&gt;</code></pre>
+        <p>Output:</p>
+        <audio src="max.mp3" controls>
+           
+        </audio>
+
+        <h3>Why Keep Media Files in the Same Directory as Your HTML Document?</h3>
+        <p>When you reference an image, video, or audio file in your HTML code using the <code>src</code> attribute, the browser needs to know where to find that file. If the media files are stored in the same directory (folder) as your HTML document, you can easily link them using just the file name (e.g., <code>cat.jpg</code>).</p>
+        <p>If the files are in a different directory, you need to provide the correct relative path. However, keeping media files in the same directory simplifies the process and reduces the chances of errors when linking to these files.</p>
+        <p>For example:</p>
+        <ul>
+            <li>If your HTML file is located in a folder called <code>website</code>, and your image is also in that same folder, you can link it like this:</li>
+            <pre><code>&lt;img src="Orhosere.jpg" alt=" learn"&gt;</code></pre>
+            <li>If your image is in a subfolder called <code>images</code> within the <code>website</code> folder, you need to specify the path like this:</li>
+            <pre><code>&lt;img src="images/Orhosere.jpg" alt="learn "&gt;</code></pre>
+        </ul>
+        <p>Keeping your HTML file and media files in the same directory ensures that your links are simple and straightforward, which is especially useful when moving your project to different locations or sharing it with others.</p>
+    </section>
+
+
+   <footer>
+        <p>&copy; 2024 Beta. All rights reserved.</p>
+        <a href="http://Aj9ES8PQUhwLwxe:QHBZcO363daIw0s@localhost:42452/storage/emulated/0/coding/web%20dev./My%20code/terms%20and%20conditions%20.html" class="footer-link">Terms & Conditions</a>
+    </footer>
+
+    <style>
+        body {
+          
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0 ;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            align-items:center;
+       
+            
+            
+        }
+
+       
+  
+        .header {
+            width: 100%;
+            height: 40px; /* Increased height for better visibility */
+            background-color: #222;
+            margin:0;
+            color: #fff;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+        }
+
+        .logo img {
+            width:55px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 8px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14.5px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff8c00;
+        }
+
+        section {
+            width:100%;
+            padding: 20px;
+            margin:15px auto;
+            margin-left:30px;
+         
+            background: #fff;
+            border-radius: 5px;
+        }
+
+    footer {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            margin-top: 20px;
+            left:45px;
+      height:75px;
+            
+        }
+
+        .footer-link {
+            color: #ff8c00;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 14px;
+        }
+
+        .footer-link:hover {
+            color: #e07a00;
+        }
+    </style>
+</body>
+</html>
